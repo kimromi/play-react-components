@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "storybook": "start-storybook"
+  },
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@storybook/react": "^5.2.0",
