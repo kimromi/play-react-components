@@ -2,13 +2,13 @@
   "scripts": {
     "storybook": "start-storybook"
   },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@storybook/react": "^5.2.0",
     "babel-loader": "^8.0.6"
-  },
-  "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
   }
 }
