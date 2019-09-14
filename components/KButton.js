@@ -1,7 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
 
-export default class KButton extends React.Component {
-  render() {
-    return <button>{this.props.children}</button>;
-  }
-}
+const KButton = styled.button`
+  background: white;
+  color: black;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid gray;
+  border-radius: 3px;
+`;
+export default KButton
