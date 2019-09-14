@@ -1,11 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Button } from '@storybook/react/demo';
+import KButton from '../components/KButton';
 
-storiesOf('Button', module)
+storiesOf('KButton', module)
   .add('with text', () => (
-    <Button>Hello Button</Button>
+    <KButton>Text</KButton>
   ))
-  .add('with emoji', () => (
-    <Button><span role="img" aria-label="so cool">😀 😎 👍 💯</span></Button>
-  ));
