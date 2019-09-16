@@ -4,5 +4,5 @@ import KButton from '../components/KButton';
 
 storiesOf('KButton', module)
   .add('with text', () => (
-    <KButton>Text</KButton>
+    <KButton onClick={() => alert('clicked') }>Text</KButton>
   ))

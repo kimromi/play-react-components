@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Button } from '@material-ui/core';
 
-const KButton = styled.button`
-  background: white;
-  color: black;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid gray;
+const KButton = styled(Button)`
+  background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
   border-radius: 3px;
+  border: 0;
+  color: white;
+  height: 48px;
+  padding: 0 30px;
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
 `;
 export default KButton
