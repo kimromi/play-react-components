@@ -1,7 +1,17 @@
 {
   "scripts": {
+    "test": "jest",
     "storybook": "start-storybook",
     "storybook:deploy": "storybook-to-ghpages"
+  },
+  "jest": {
+    "verbose": true,
+    "moduleNameMapper": {
+      "^@/(.+)": "<rootDir>/$1"
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/setup.js"
+    ]
   },
   "dependencies": {
     "@material-ui/core": "^4.4.2",
@@ -13,6 +23,9 @@
     "@babel/core": "^7.6.0",
     "@storybook/react": "^5.2.0",
     "@storybook/storybook-deployer": "^2.8.1",
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.9.0"
   }
 }
