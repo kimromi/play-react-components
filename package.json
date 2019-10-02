@@ -1,5 +1,8 @@
 {
   "scripts": {
+    "start": "node server.js",
+    "build": "webpack",
+    "build:dev": "webpack --watch",
     "test": "jest",
     "storybook": "start-storybook",
     "storybook:deploy": "storybook-to-ghpages"
@@ -7,25 +10,29 @@
   "jest": {
     "verbose": true,
     "moduleNameMapper": {
-      "^@/(.+)": "<rootDir>/$1"
+      "^@/(.+)": "<rootDir>/client/$1"
     },
     "setupFilesAfterEnv": [
-      "<rootDir>/tests/setup.js"
+      "<rootDir>/client/tests/setup.js"
     ]
   },
   "dependencies": {
     "@material-ui/core": "^4.4.2",
+    "express": "^4.17.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/react": "^5.2.0",
     "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.6",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "webpack-cli": "^3.3.9"
   }
 }
