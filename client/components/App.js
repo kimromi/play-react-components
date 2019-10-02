@@ -1,9 +1,14 @@
-import React from 'react';
+import React from 'react'
+import Footer from '@/components/Footer'
+import AddTodo from '@/containers/AddTodo'
+import VisibleTodoList from '@/containers/VisibleTodoList'
 
-import KButton from './KButton';
+const App = () => (
+  <div>
+    <AddTodo />
+    <VisibleTodoList />
+    <Footer />
+  </div>
+)
 
-export default class App extends React.Component {
-  render() {
-    return <div>Hello React App!<KButton>click!</KButton></div>;
-  }
-};
+export default App
